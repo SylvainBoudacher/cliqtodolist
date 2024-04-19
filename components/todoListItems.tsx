@@ -1,6 +1,9 @@
 "use client";
+
 import { Todo } from "@/model/todo.model";
 import { useTodoStore } from "@/store/todoStore";
+
+import TodoListLignItem from "@/components/toDoListLignItem";
 
 export default function ToDoListItems() {
   const toDoList = useTodoStore((state) => state.items);
@@ -10,9 +13,7 @@ export default function ToDoListItems() {
         ?.slice()
         .reverse()
         .map((item: Todo) => (
-          <p key={item.id}>
-            {item.text} - {item.status.toString()}
-          </p>
+          <TodoListLignItem key={item.id} item={item} />
         ))}
     </div>
   );

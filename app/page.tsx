@@ -12,8 +12,6 @@ export default function Home() {
         <div className="relative flex flex-col w-full h-full items-center gap-6 px-6 text-center">
           <TitlePart />
           <ToDoInput />
-
-          {/* Create -> List items */}
           <ToDoListItems />
         </div>
       </div>
