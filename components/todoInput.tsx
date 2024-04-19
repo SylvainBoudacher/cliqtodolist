@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ArrowUp } from "@phosphor-icons/react";
 
-export default function ToDoInput() {
+export default function TodoInput() {
   const [isDisabled, setIsDisabled] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const addItem = useTodoStore((state) => state.addItem);
@@ -34,7 +34,7 @@ export default function ToDoInput() {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         onKeyDown={(e) => {
-          if (e.key === "Enter") handleSubmit();
+          if (e.key === "Enter" && !isDisabled) handleSubmit();
         }}
       />
 
