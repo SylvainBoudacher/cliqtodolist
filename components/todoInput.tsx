@@ -22,7 +22,7 @@ export default function TodoInput() {
   };
 
   useEffect(() => {
-    inputValue.length > 0 ? setIsDisabled(false) : setIsDisabled(true);
+    inputValue.trim().length > 0 ? setIsDisabled(false) : setIsDisabled(true);
   }, [inputValue, setIsDisabled]);
 
   return (
