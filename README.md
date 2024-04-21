@@ -1,5 +1,7 @@
 # CLIQ Digital - Technical test
 
+![picture](https://i.imgur.com/VJq1yn6.png)
+
 ## Authors
 
 - [@SylvainBoudacher](https://github.com/SylvainBoudacher)
@@ -14,7 +16,7 @@
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
