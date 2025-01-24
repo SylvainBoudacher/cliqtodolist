@@ -3,7 +3,7 @@
 import { Todo } from "@/model/todo.model";
 import { useTodoStore } from "@/store/todoStore";
 
-import TodoListLignItem from "@/components/toDoListLignItem";
+import TodoListLignItem from "@/components/todoListLignItem";
 
 export default function ToDoListItems() {
   const toDoList = useTodoStore((state) => state.items);
